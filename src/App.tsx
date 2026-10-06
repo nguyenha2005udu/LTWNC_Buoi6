@@ -1,0 +1,1 @@
+import {ProductList} from './components/ProductList'; import {CartSummary} from './components/CartSummary'; export default function App(){return <main><h1>Shop Test Lab</h1><ProductList/><CartSummary/></main>}

@@ -1,0 +1,1 @@
+import type {CartItem} from '../types'; export const calculateCartTotal=(items:CartItem[])=>items.reduce((t,i)=>t+i.price*i.quantity,0); export const calculateTotalQuantity=(items:CartItem[])=>items.reduce((t,i)=>t+i.quantity,0);

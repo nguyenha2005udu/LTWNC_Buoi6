@@ -1,0 +1,1 @@
+import {useMemo} from 'react'; import {useAppSelector} from '../app/hooks'; import {calculateCartTotal,calculateTotalQuantity} from '../utils/cartUtils'; export function useCartSummary(){const items=useAppSelector(s=>s.cart.items); return {items,total:useMemo(()=>calculateCartTotal(items),[items]),totalQuantity:useMemo(()=>calculateTotalQuantity(items),[items])}}
